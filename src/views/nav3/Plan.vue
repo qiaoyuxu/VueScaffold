@@ -44,9 +44,9 @@
             <el-table-column prop="fcp" label="FCP" min-width="30"></el-table-column>
             <el-table-column prop="fins" label="FINS" min-width="30"></el-table-column>
             <el-table-column prop="hbalc" label="HbAlc" min-width="30"></el-table-column>
-            <el-table-column prop="2hfpg" label="2hFPG" min-width="30"></el-table-column>
-            <el-table-column prop="2hfcp" label="2hFCP" min-width="30"></el-table-column>
-            <el-table-column prop="2hfins" label="2hFINS" min-width="30"></el-table-column>
+            <!--<el-table-column prop="2hfpg" label="2hFPG" min-width="30"></el-table-column>-->
+            <!--<el-table-column prop="2hfcp" label="2hFCP" min-width="30"></el-table-column>-->
+            <!--<el-table-column prop="2hfins" label="2hFINS" min-width="30"></el-table-column>-->
             <el-table-column prop="crp" label="CRP" min-width="30"></el-table-column>
             <el-table-column prop="ua" label="UA" min-width="30"></el-table-column>
             <el-table-column prop="bmi" label="BMI" min-width="30"></el-table-column>

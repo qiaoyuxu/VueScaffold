@@ -41,9 +41,9 @@
             <el-table-column prop="fcp" label="FCP" min-width="30"></el-table-column>
             <el-table-column prop="fins" label="FINS" min-width="30"></el-table-column>
             <el-table-column prop="hbalc" label="HbAlc" min-width="30"></el-table-column>
-            <el-table-column prop="2hfpg" label="2hFPG" min-width="30"></el-table-column>
-            <el-table-column prop="2hfcp" label="2hFCP" min-width="30"></el-table-column>
-            <el-table-column prop="2hfins" label="2hFINS" min-width="30"></el-table-column>
+            <!--<el-table-column prop="2hfpg" label="2hFPG" min-width="30"></el-table-column>-->
+            <!--<el-table-column prop="2hfcp" label="2hFCP" min-width="30"></el-table-column>-->
+            <!--<el-table-column prop="2hfins" label="2hFINS" min-width="30"></el-table-column>-->
             <el-table-column prop="crp" label="CRP" min-width="30"></el-table-column>
             <el-table-column prop="ua" label="UA" min-width="30"></el-table-column>
             <el-table-column prop="bmi" label="BMI" min-width="30"></el-table-column>
@@ -59,30 +59,30 @@
         </el-col>
 
         <!--对话框-->
-        <el-dialog custom-class="analysis" title="预测分析" v-model="dialogVisible" :close-on-click-modal="true" :show-close="true" top="11vh" size="large">
+        <el-dialog custom-class="analysis" title="预测分析" v-model="dialogVisible" :close-on-click-modal="true" :show-close="true" top="2vh">
             <section class="chart-container">
                 <el-row>
                     <el-col :span="12">
-                        <div id="radar" style="width:100%; height:400px;"></div>
+                        <div id="radar" style="width:100%; height:360px;"></div>
                     </el-col>
                     <el-col :span="12">
-                        <div id="pie" style="width:100%; height:400px;"></div>
+                        <div id="pie" style="width:100%; height:360px;"></div>
                     </el-col>
                 </el-row>
             </section>
             <div>
                 <div>
-                    <span style="font-size: 16px;"><a style="font-weight:bold;">诊断：</a>
+                    <span style="font-size: 13px;"><a style="font-weight:bold;">诊断：</a>
                         <a style="font-weight:bold;">正常</a>的可能性为<a style="font-weight:bold;">10.60%</a>
                         ；患有<a style="font-weight:bold;">I型糖尿病</a>的可能性为<a style="font-weight:bold;">0.95%</a>
                         ；患有<a style="font-weight:bold;">II型糖尿病</a>的可能性为<a style="font-weight:bold;">88.45%</a>
                     </span>
                 </div>
                 <div>
-                    <span style="font-size: 16px;"><a style="font-weight:bold;">分析：</a>身体质量指数(BMI)偏高，腰臀比过大，体脂过多，空腹血糖和空腹胰岛素指标过高，导致胰岛素敏感性下降，糖尿病风险极高。</span>
+                    <span style="font-size: 13px;"><a style="font-weight:bold;">分析：</a>身体质量指数(BMI)偏高，腰臀比过大，体脂过多，空腹血糖和空腹胰岛素指标过高，导致胰岛素敏感性下降，糖尿病风险极高。</span>
                 </div>
                 <div>
-                    <span style="font-size: 16px;"><a style="font-weight:bold;">建议：</a>膳食纤维和维生素要充分，严格控制好两餐时间，饮食规律，切忌暴饮暴食，建议减少晚餐摄入量；增大运动量，餐后多散步，吸烟饮酒频率应适当降低。</span>
+                    <span style="font-size: 13px;"><a style="font-weight:bold;">建议：</a>膳食纤维和维生素要充分，严格控制好两餐时间，饮食规律，切忌暴饮暴食，建议减少晚餐摄入量；增大运动量，吸烟饮酒频率应适当降低。</span>
                 </div>
             </div>
             <div slot="footer" class="dialog-footer" style="padding:0px 10px;">
