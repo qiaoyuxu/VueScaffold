@@ -1,7 +1,7 @@
 <template>
-    <el-col :span="14" :offset="4">
+    <el-col :span="17" :offset="0">
         <el-form :model="form" label-width="50px" :rules="formRules" ref="form"
-                 style="margin-top: 50px;">
+                 style="margin-top: 15px;">
             <el-form-item label="公司" prop="companyName">
                 <el-input v-model="form.companyName" auto-complete="off"></el-input>
             </el-form-item>
@@ -43,20 +43,17 @@
                 </el-radio-group>
             </el-form-item>
             <el-form-item label="备注">
-                <el-input type="textarea" v-model="form.comment" :rows="5"></el-input>
+                <el-input type="textarea" v-model="form.comment" :rows="3"></el-input>
             </el-form-item>
             <el-form-item align="right">
-                <el-button @click.native.prevent style="margin-right: 20px;">取消</el-button>
-                <el-button type="primary" @click="save">保存</el-button>
+                <el-button @click.native.prevent style="margin-right: 10px;">取 消</el-button>
+                <el-button type="primary" @click="save">保 存</el-button>
             </el-form-item>
         </el-form>
     </el-col>
 </template>
 
 <script>
-    // import {resetPass} from '../../api/api';
-    import util from '../../common/js/util'
-
     export default {
         data() {
             return {
